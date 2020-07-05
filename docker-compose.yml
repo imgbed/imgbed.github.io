@@ -6,7 +6,7 @@ services:
     tty: true
     entrypoint: "tail -f /dev/null"
     volumes:
-      - ~/Documents/GitHub/jekyllblog:/srv/jekyll
+      - ~/Documents/GitHub/imgbed.github.io:/srv/jekyll
     working_dir: /srv/jekyll
     ports:
       - 4000:4000

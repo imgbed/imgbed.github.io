@@ -22,12 +22,13 @@ defaults:
     values:
       layout: post
       styles : [highlight.css,gitment.css,post.css]
-      scripts : [gitment.js, post.js]
+      # scripts : [gitment.js, post.js]
+      scripts : [post.js]
 
 
 
 title: "imgbed"
-email: sincerebravefight@gmail.com
+email: kevin19010203@gmail.com
 description: ""
 github:
   username: imgbed
@@ -38,10 +39,10 @@ swiftype:
 #     client_id: a6fb73b3e790e234bab8
 #     client_secret: cc10aaff53a03d05ab2ee002dbf401dd7627c7a3
 
-url: "/"
-imgrepo: "/static/img"
+# url: "/"
+# imgrepo: "/static/img"
 
-# baseUrl : "http://127.0.0.1:4000"
-# imgrepo: "http://127.0.0.1:4000/static/img"
+baseUrl : "http://127.0.0.1:4000"
+imgrepo: "http://127.0.0.1:4000/static/img"
 
 
