@@ -1,0 +1,13 @@
+version: "3"
+services:
+  jekyll:
+    image: jekyll/jekyll
+    container_name: djekyll
+    tty: true
+    entrypoint: "tail -f /dev/null"
+    volumes:
+      - ~/Documents/GitHub/jekyllblog:/srv/jekyll
+    working_dir: /srv/jekyll
+    ports:
+      - 4000:4000
+    # command: jekyll serve -w
