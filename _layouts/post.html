@@ -37,33 +37,25 @@ layout: default
 
 
 
-                                  <!-- Vssue 的样式文件 -->
-                                  <link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css">
-                                  <div id="vssue"></div>
-                                  <!-- Vue 运行时版 (runtime only)  -->
-                                  <script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script>
-                                  <!-- Vssue Github 版  -->
-                                  <script src="https://unpkg.com/vssue/dist/vssue.github.min.js"></script>
-                                  <!-- 对于 Vue 运行时版，使用渲染函数（render function） -->
-                                  <script>
-                                    new Vue({
-                                      el: '#vssue',
-                                      render: h => h('Vssue', {
-                                        props: {
-                                          // 在这里设置当前页面对应的 Issue 标题
-                                          title: 'Vssue Dev',
 
-                                          // 在这里设置你使用的平台的 OAuth App 配置
-                                          options: {
-            owner: 'meteorlxy',
-            repo: 'vssue-demo',
-            clientId: '083b98e0d6526ce0a4a5',
-            clientSecret: 'f41adb2b6ae9a79b09cb852e4b8fa58f325af487',
-                                          },
-                                        }
-                                      })
+
+                                  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                                  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+                                  <div id="gitalk-container"></div>
+                                  <script type="text/javascript">
+                                      const gitalk = new Gitalk({
+                                      clientID: '07d5fa5905ababd9a5fc',
+                                      clientSecret: '54eab08964d51b4589705f08e6dea2499127aabf',
+                                      repo: 'mgbed.github.io',      // The repository of store comments,
+                                      owner: 'imgbed',
+                                      admin: ['GitHub repo owner and collaborators, only these guys can initialize github issues'],
+                                      id: location.pathname,      // Ensure uniqueness and length less than 50
+                                      distractionFreeMode: false  // Facebook-like distraction free mode
                                     })
+
+                                    gitalk.render('gitalk-container')
                                   </script>
+
 
 
 
